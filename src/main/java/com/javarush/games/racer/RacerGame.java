@@ -122,7 +122,7 @@ public class RacerGame extends Game {
         if (key == Key.UP) {
             player.speed = 1;
         } else if ((key == Key.RIGHT && player.getDirection() == Direction.RIGHT)
-                || (key == Key.LEFT && player.getDirection() == Direction.LEFT)) {
+                   || (key == Key.LEFT && player.getDirection() == Direction.LEFT)) {
             player.setDirection(Direction.NONE);
         }
     }
