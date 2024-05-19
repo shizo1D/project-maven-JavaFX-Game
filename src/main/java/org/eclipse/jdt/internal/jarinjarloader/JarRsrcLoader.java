@@ -128,5 +128,4 @@ public class JarRsrcLoader {
         }
         return (String[]) result.toArray(new String[result.size()]);
     }
-
 }

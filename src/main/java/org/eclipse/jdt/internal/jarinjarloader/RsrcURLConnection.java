@@ -36,7 +36,7 @@ public class RsrcURLConnection extends URLConnection {
 
     public RsrcURLConnection(URL url, ClassLoader classLoader) {
         super(url);
-        this.classLoader= classLoader;
+        this.classLoader = classLoader;
     }
 
     @Override
@@ -45,13 +45,11 @@ public class RsrcURLConnection extends URLConnection {
 
     @Override
     public InputStream getInputStream() throws IOException {
-        String file= URLDecoder.decode(url.getFile(), JIJConstants.UTF8_ENCODING);
-        InputStream result= classLoader.getResourceAsStream(file);
+        String file = URLDecoder.decode(url.getFile(), JIJConstants.UTF8_ENCODING);
+        InputStream result = classLoader.getResourceAsStream(file);
         if (result == null) {
             throw new MalformedURLException("Could not open InputStream for URL '" + url + "'"); //$NON-NLS-1$ //$NON-NLS-2$
         }
         return result;
     }
-
-
 }

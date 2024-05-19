@@ -57,5 +57,4 @@ public class RsrcURLStreamHandler extends java.net.URLStreamHandler {
             file = spec;
         setURL(url, JIJConstants.INTERNAL_URL_PROTOCOL, "", -1, null, null, file, null, null);	 //$NON-NLS-1$
     }
-
 }

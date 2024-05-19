@@ -54,5 +54,4 @@ public class RsrcURLStreamHandlerFactory implements URLStreamHandlerFactory {
     public void setURLStreamHandlerFactory(URLStreamHandlerFactory fac) {
         chainFac = fac;
     }
-
 }
